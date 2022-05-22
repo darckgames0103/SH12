@@ -896,86 +896,290 @@ end)
                                                                                                                                                                                                                                                         end)
 
                                                                                                                                                                                                                                                         local ss = s:Tab("Drop")
+                                                                                                                                                                                                                                                        ss:Toggle("Auto Drop Jet",function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Jet"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Jet"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
 
-                                                                                                                                                                                                                                                        ss:Toggle("auto drop trading ben",function(v)
-                                                                                                                                                                                                                                                            if v then
-                                                                                                                                                                                                                                                                _G.on = true
-                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                while _G.on == true do
-                                                                                                                                                                                                                                                                    wait(0.000)
-                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                wait(0.000)
-                                                                                                                                                                                                                                                                getgenv().item_name = "Trading Ben"
-                                                                                                                                                                                                                                                                loadstring(game:HttpGet('https://raw.githubusercontent.com/THEBESTHAGEG/LOLOLO/main/README.md'))()
-                                                                                                                                                                                                                                                                     
-                                                                                                                                                                                                                                                                wait(0.000)
-                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                    end
-                                                                                                                                                                                                                                                                    else
-                                                                                                                                                                                                                                                                _G.on = false
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                    end
-                                                                                                                                                                                                                                                                end)
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+                                                                ss:Toggle("Auto Drop eTruck", function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "eTruck"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "eTruck"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
 
-                                                                                                                                                                                                                                                                ss:Toggle("auto drop the banana",function(v)
-                                                                                                                                                                                                                                                                    if v then
-                                                                                                                                                                                                                                                                        _G.on = true
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        while _G.on == true do
-                                                                                                                                                                                                                                                                            wait(0.000)
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        wait(0.000)
-                                                                                                                                                                                                                                                                        getgenv().item_name = "The banana"
-                                                                                                                                                                                                                                                                        loadstring(game:HttpGet('https://raw.githubusercontent.com/THEBESTHAGEG/LOLOLO/main/README.md'))()
-                                                                                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                        wait(0.000)
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                            end
-                                                                                                                                                                                                                                                                            else
-                                                                                                                                                                                                                                                                        _G.on = false
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                            end
-                                                                                                                                                                                                                                                                        end)
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
 
-                                                                                                                                                                                                                                                                        ss:Toggle("auto drop munehh",function(v)
-                                                                                                                                                                                                                                                                            if v then
-                                                                                                                                                                                                                                                                                _G.on = true
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                                while _G.on == true do
-                                                                                                                                                                                                                                                                                    wait(0.000)
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                                wait(0.000)
-                                                                                                                                                                                                                                                                                getgenv().item_name = "Munneh"
-                                                                                                                                                                                                                                                                                loadstring(game:HttpGet('https://raw.githubusercontent.com/THEBESTHAGEG/LOLOLO/main/README.md'))()
-                                                                                                                                                                                                                                                                                     
-                                                                                                                                                                                                                                                                                wait(0.000)
-                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                                    end
-                                                                                                                                                                                                                                                                                    else
-                                                                                                                                                                                                                                                                                _G.on = false
-                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                    end
-                                                                                                                                                                                                                                                                                end)
+                                                                ss:Toggle("Auto Drop Muscles", function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Muscles"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Muscles"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
 
-                                                                                                                                                                                                                                                                                ss:Toggle("auto drop Mommeh",function(v)
-                                                                                                                                                                                                                                                                                    if v then
-                                                                                                                                                                                                                                                                                        _G.on = true
-                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                        while _G.on == true do
-                                                                                                                                                                                                                                                                                            wait(0.000)
-                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                        wait(0.000)
-                                                                                                                                                                                                                                                                                        getgenv().item_name = "Mommeh Long Legs"
-                                                                                                                                                                                                                                                                                        loadstring(game:HttpGet('https://raw.githubusercontent.com/THEBESTHAGEG/LOLOLO/main/README.md'))()
-                                                                                                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                                        wait(0.000)
-                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                            end
-                                                                                                                                                                                                                                                                                            else
-                                                                                                                                                                                                                                                                                        _G.on = false
-                                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                                            end
-                                                                                                                                                                                                                                                                                        end)
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+                                                                ss:Toggle("Auto Drop Gem Rainbow",function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Gem Rainbow"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Gem Rainbow"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+                                                                ss:Toggle("Auto Drop Gummy Rainbow" ,function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Gummy Rainbow"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Gummy Rainbow"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+                                                
+                                                                ss:Toggle("Auto Drop Crystal Rainbow",function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Crystal Rainbow"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Crystal Rainbow"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+                                                                ss:Toggle("Auto Drop Amogus Rainbow", function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Amogus Rainbow"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Amogus Rainbow"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+                                                                ss:Toggle("Auto Drop Lolly Rainbow"  ,  function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Lolly Rainbow"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Lolly Rainbow"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+                                                                ss:Toggle("Auto Drop Pop It Rainbow!"  , function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Pop It Rainbow!"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Pop It Rainbow!"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+                                                                ss:Toggle("Auto Drop The banana"  ,  function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "The banana"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "The banana"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+                                                       wait(1)
+                                                                                                                                                                                                                                                        
 
 
                                                                                                                                                                                                                                                         ss:Button("Drop Trading ben",function()
@@ -1511,8 +1715,8 @@ ss:Toggle("auto dupe Huggy Box",function(v)
 
 
 
-                                                         ss:Toggle("Auto sell Ben",function(v)
-                                                        if v then
+                                                          ss:Toggle("Auto Sell Jet" , function(state)
+                                                            if state then
                                                                 _G.on = true
                                                                 
                                                                 while _G.on == true do
@@ -1520,11 +1724,11 @@ ss:Toggle("auto dupe Huggy Box",function(v)
                                                                 
                                                                 wait(0.2)
                                                                 local args = {
-                                                                        [1] = "Trading Ben"
+                                                                        [1] = "Jet"
                                                                     }
                                                                     game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
                                                                         local args = {
-                                                                        [1] = "Trading Ben"
+                                                                        [1] = "Jet"
                          
                                                                       
                                                                     }
@@ -1539,9 +1743,8 @@ ss:Toggle("auto dupe Huggy Box",function(v)
                                                                         
                                                                     end
                                                         end)
-                                                        
-                                                        ss:Toggle("Auto sell Munehh",function(v)
-                                                        if v then
+                                                                ss:Toggle("Auto Sell eTruck"  , function(state)
+                                                            if state then
                                                                 _G.on = true
                                                                 
                                                                 while _G.on == true do
@@ -1549,11 +1752,11 @@ ss:Toggle("auto dupe Huggy Box",function(v)
                                                                 
                                                                 wait(0.2)
                                                                 local args = {
-                                                                        [1] = "Munneh"
+                                                                        [1] = "eTruck"
                                                                     }
                                                                     game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
                                                                         local args = {
-                                                                        [1] = "Munneh"
+                                                                        [1] = "eTruck"
                          
                                                                       
                                                                     }
@@ -1568,8 +1771,9 @@ ss:Toggle("auto dupe Huggy Box",function(v)
                                                                         
                                                                     end
                                                         end)
-                                                        ss:Toggle("Auto sell Mommeh",function(v)
-                                                        if v then
+
+                                                                ss:Toggle("Auto Sell Muscles"  ,  function(state)
+                                                            if state then
                                                                 _G.on = true
                                                                 
                                                                 while _G.on == true do
@@ -1577,11 +1781,40 @@ ss:Toggle("auto dupe Huggy Box",function(v)
                                                                 
                                                                 wait(0.2)
                                                                 local args = {
-                                                                        [1] = "Mommeh Long Legs"
+                                                                        [1] = "Muscles"
                                                                     }
                                                                     game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
                                                                         local args = {
-                                                                        [1] = "Mommeh Long Legs"
+                                                                        [1] = "Muscles"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                                end)
+                                                    wait(1)
+                                                                ss:Toggle("Auto Sell Gem Rainbow" , function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Gem Rainbow"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Gem Rainbow"
                          
                                                                       
                                                                     }
@@ -1596,24 +1829,24 @@ ss:Toggle("auto dupe Huggy Box",function(v)
                                                                         
                                                                     end
                                                         end)
-                                                        ss:Toggle("Auto sell The banana",function(v)
-                                                        if v then
+                                                                ss:Toggle("Auto Sell Gummy Rainbow"  ,  function(state)
+                                                            if state then
                                                                 _G.on = true
                                                                 
                                                                 while _G.on == true do
-                                                                    wait(1)
+                                                                    wait()
                                                                 
                                                                 wait(0.2)
                                                                 local args = {
-                                                                        [1] = "The banana"
+                                                                        [1] = "Gummy Rainbow"
                                                                     }
                                                                     game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
                                                                         local args = {
-                                                                        [1] = "The banana"
+                                                                        [1] = "Gummy Rainbow"
                          
                                                                       
                                                                     }
-                                                                    wait(0)
+                                                                    wait(1)
                                                                                                                                  game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
 
                                                                 wait(0.2)
@@ -1624,14 +1857,100 @@ ss:Toggle("auto dupe Huggy Box",function(v)
                                                                         
                                                                     end
                                                         end)
-                                                         ss:Toggle("Auto sell Pop It Rainbow!",function(v)
-                                                        if v then
+                                                
+                                                                ss:Toggle("Auto Sell Crystal Rainbow"  ,  function(state)
+                                                            if state then
                                                                 _G.on = true
                                                                 
                                                                 while _G.on == true do
                                                                     wait()
                                                                 
-                                                                wait(0.1)
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Crystal Rainbow"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Crystal Rainbow"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+                                                                ss:Toggle("Auto Sell Amogus Rainbow" , function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Amogus Rainbow"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Amogus Rainbow"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+
+                                                               ss:Toggle("Auto Sell Lolly Rainbow"  ,  function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "Lolly Rainbow"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "Lolly Rainbow"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+                                                                ss:Toggle("Auto Sell Pop It Rainbow!"  ,  function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
                                                                 local args = {
                                                                         [1] = "Pop It Rainbow!"
                                                                     }
@@ -1644,7 +1963,7 @@ ss:Toggle("auto dupe Huggy Box",function(v)
                                                                     wait(1)
                                                                                                                                  game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
 
-                                                                wait(0.1)
+                                                                wait(0.2)
                                                                 
                                                                     end
                                                                     else
@@ -1652,6 +1971,35 @@ ss:Toggle("auto dupe Huggy Box",function(v)
                                                                         
                                                                     end
                                                         end)
+                                                                ss:Toggle("Auto Sell The banana" , function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "The banana"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "The banana"
+                         
+                                                                      
+                                                                    }
+                                                                    wait(1)
+                                                                                                                                 game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                        end)
+
                 
                                                                                                                                                                                                                                                                                  
         
